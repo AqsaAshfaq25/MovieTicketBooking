@@ -1,0 +1,107 @@
+.container2 {
+    position: relative;
+    overflow: hidden;
+    height: 76vh;
+    background-image: url(https://www.pakimag.com/files/2013/11/Korangi-District-Karachi-Map.jpg);
+    background-size: cover;
+  }
+  .input1 {
+    display: none;
+  }
+  p {
+    margin: 0;
+    color: #d32f2f;
+  }
+  .button2 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d32f2f;
+    display: block;
+    padding: 10px 16px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    animation: fadein 0.5s;
+    animation: pulse 1.5s infinite;
+  }
+  .content1 {
+    background: white;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+    display: none;
+    /* margin: 10%; */
+    border-radius: 8px;
+    box-shadow: 0 4px 2px -2px rgba(211, 47, 47, 0);
+  }
+  .cross {
+    font-weight: bold;
+  }
+  #b1 {
+    position: absolute;
+    left: 73%;
+    top: 10rem;
+  }
+  #b2 {
+    position: absolute;
+    left: 42%;
+    top: 20rem;
+  }
+  #b3 {
+    position: relative;
+    left: 67%;
+    top: 10rem;
+  }
+  #input1:checked ~ #content1,
+  #input2:checked ~ #content2,
+  #input3:checked ~ #content3 {
+    display: block !important;
+    animation: fadein 0.5s;
+  }
+  input:checked ~ label .button2 {
+    display: none !important;
+    animation: fadeout 0.5s;
+  }
+  .button2:hover {
+    color: #d32f2f;
+    background: white;
+  }
+  .cta2 {
+    display: inline-block;
+    background: #d32f2f;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 48px;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .cta2:hover {
+    text-decoration: underline !important;
+    box-shadow: 0 0 0 6px rgba(211, 46, 46, 0.4);
+    color: white;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeout {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes pulse {
+    from {
+      box-shadow: 0 0 0 0px rgba(211, 47, 47);
+    }
+    to {
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+  }
